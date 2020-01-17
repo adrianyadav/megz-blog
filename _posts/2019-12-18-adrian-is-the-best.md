@@ -1,9 +1,14 @@
 ---
 layout: post
-title: adrian is the best!!
-image: /img/uploads/04.jpg
-tags: work
+title: TESTING 123
+image: /img/uploads/02.jpg
+tags: poem
 carousel: true
 ---
+**test** post\
 
-this is true
+
+
+> test quote
+
+![water](/img/uploads/03.jpg "water")
