@@ -1,7 +1,7 @@
 title: Megha Mehta
-description: A blog about travel
+description: Fashion & Lifestyle
 authorName: Megha Mehta
-authorImage: /img/uploads/megha.png
+authorImage: /img/uploads/Screen Shot 2020-01-17 at 5.26.46 pm.png
 items:
   - icon: ion-logo-facebook
     link: 'https://www.facebook.com/mehta.megz'
@@ -13,6 +13,6 @@ items:
     link: 'mailto:mehta.megz@gmail.com'
     name: Email
 instagramProfileUrl: 'https://www.instagram.com/megz_mehta/'
-instagramUserId: '6716400487'
-instagramAccessToken: 6716400487.1677ed0.4fae51c47bc544a895b81756a7d0c477
+instagramUserId: '1614935030'
+instagramAccessToken: 1614935030.1677ed0.388bd15127d2432cbed3d77641048e09
 googleAnalyticsId: '12'
