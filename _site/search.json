@@ -1,19 +1,11 @@
 [
   
     {
-      "title"    : "another test",
+      "title"    : "Letter to my grandma",
       "category" : "",
-      "tags"     : "Life and Work",
-      "url"      : "/another-test",
-      "date"     : "2019-12-18 00:00:00 -1000"
-    } ,
-  
-    {
-      "title"    : "adrian is the best!!",
-      "category" : "",
-      "tags"     : "work",
-      "url"      : "/adrian-is-the-best",
-      "date"     : "2019-12-18 00:00:00 -1000"
+      "tags"     : "poem",
+      "url"      : "/letter-to-my-grandma",
+      "date"     : "2020-01-18 00:00:00 +1100"
     } 
   
 ]
