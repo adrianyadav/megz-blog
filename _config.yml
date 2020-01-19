@@ -1,7 +1,7 @@
 title: Megha Mehta
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Melotta is a modern and minimal Jekyll theme for sharing your ideas.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://megha-mehta-blog.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
