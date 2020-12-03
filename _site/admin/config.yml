@@ -2,116 +2,116 @@ backend:
   name: git-gateway
   branch: master # Branch to update (master by default)
 
-media_folder: "img/uploads" # Folder where user uploaded files should go
+media_folder: 'img/uploads' # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "settings"
-    label: "Settings"
-    description: "Configure default settings here"
+  - name: 'settings'
+    label: 'Settings'
+    description: 'Configure default settings here'
     files:
-      - label: "Edit Settings"
-        name: "settings"
-        file: "_data/settings.yml"
+      - label: 'Edit Settings'
+        name: 'settings'
+        file: '_data/settings.yml'
         fields:
           - {
-              label: "Website title",
-              name: "title",
-              widget: "string",
-              default: "Megha Mehta",
+              label: 'Website title',
+              name: 'title',
+              widget: 'string',
+              default: 'Megha Mehta',
             }
           - {
-              label: "Website description",
-              name: "description",
-              widget: "string",
-              default: "Megha Mehta",
+              label: 'Website description',
+              name: 'description',
+              widget: 'string',
+              default: 'Megha Mehta',
             }
-          - { label: "Author name", name: "authorName", widget: "string" }
-          - { label: "Author image", name: "authorImage", widget: "image" }
-          - label: "Contact details"
-            name: "items"
-            widget: "list"
+          - { label: 'Author name', name: 'authorName', widget: 'string' }
+          - { label: 'Author image', name: 'authorImage', widget: 'image' }
+          - label: 'Contact details'
+            name: 'items'
+            widget: 'list'
             fields:
-              - { label: "name", name: "name", widget: string }
-              - { label: "icon", name: "icon", widget: string }
-              - { label: "link", name: "link", widget: string }
+              - { label: 'name', name: 'name', widget: string }
+              - { label: 'icon', name: 'icon', widget: string }
+              - { label: 'link', name: 'link', widget: string }
           - {
-              label: "Instagram profile url",
-              name: "instagramProfileUrl",
-              widget: "string",
+              label: 'Instagram profile url',
+              name: 'instagramProfileUrl',
+              widget: 'string',
             }
           - {
-              label: "Instagram user id",
-              name: "instagramUserId",
-              widget: "string",
+              label: 'Instagram user id',
+              name: 'instagramUserId',
+              widget: 'string',
             }
           - {
-              label: "Instagram access token",
-              name: "instagramAccessToken",
-              widget: "string",
+              label: 'Instagram access token',
+              name: 'instagramAccessToken',
+              widget: 'string',
             }
           - {
-              label: "Google analytics id",
-              name: "googleAnalyticsId",
-              widget: "string",
+              label: 'Google analytics id',
+              name: 'googleAnalyticsId',
+              widget: 'string',
             }
 
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc      d
-    description: "Manage your posts here"
+  - name: 'post' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Post' # Used in the UI, ie.: "New Post"
+    folder: '_posts' # The path to the folder where the documents are stored
+    sort: 'date:desc' # Default is title:asc      d
+    description: 'Manage your posts here'
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     fields: # The fields each document in this collection have
-      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - {
-          label: "Featured image",
-          name: "image",
-          widget: "image",
-          tagname: "image",
+          label: 'Featured image',
+          name: 'image',
+          widget: 'image',
+          tagname: 'image',
         }
-      - { label: "Tags", name: "tags", widget: "string", required: false }
+      - { label: 'Tags', name: 'tags', widget: 'string', required: false }
       - {
-          label: "Display in Carousel on homepage",
-          name: "carousel",
-          widget: "boolean",
+          label: 'Display in Carousel on homepage',
+          name: 'carousel',
+          widget: 'boolean',
           required: false,
         }
-      - { label: "Body", name: "body", widget: "markdown" }
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: "YYYY-MM-DD hh:mm:ss",
-        }
-  - name: "pages"
-    label: "Pages"
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+    # meta: # Meta data fields. Just like fields, but without any preview element
+    #   - {
+    #       label: "Publish Date",
+    #       name: "date",
+    #       widget: "datetime",
+    #       format: "YYYY-MM-DD hh:mm:ss",
+    #     }
+  - name: 'pages'
+    label: 'Pages'
     editor:
       preview: false
     files:
-      - label: "About Page"
-        name: "about"
-        file: "_pages/about.md"
+      - label: 'About Page'
+        name: 'about'
+        file: '_pages/about.md'
         fields:
           - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              default: "about",
+              label: 'Title',
+              name: 'title',
+              widget: 'string',
+              default: 'about',
             }
           - {
-              label: "Featured image",
-              name: "image",
-              widget: "image",
-              tagname: "image",
+              label: 'Featured image',
+              name: 'image',
+              widget: 'image',
+              tagname: 'image',
             }
           - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "page",
+              label: 'Layout',
+              name: 'layout',
+              widget: 'hidden',
+              default: 'page',
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
